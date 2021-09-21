@@ -11,13 +11,13 @@
         .tab {
             overflow: hidden;
             border: 1px solid #ccc;
-            background-color: #f1f1f1;
+            background-color: #9BB498;
         }
 
         /* Style the buttons inside the tab */
         .tab button {
             background-color: inherit;
-            float: left;
+            float: center;
             border: none;
             outline: none;
             cursor: pointer;
@@ -48,7 +48,7 @@
         <title>My personal site <3</title>
     </head>
     <body bgcolor="#F9E7CA" ; text="#0B6600" ;>
-        <h1>Bhargavi Gundla</h1>
+        <h1><center>Bhargavi Gundla</center></h1>
   
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
@@ -86,7 +86,7 @@
         </div>
         
         <script>
-        function openCity(evt, cityName) {
+        function openButton(evt, buttonName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
