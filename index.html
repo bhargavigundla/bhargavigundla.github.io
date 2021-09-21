@@ -11,13 +11,13 @@
         .tab {
             overflow: hidden;
             border: 1px solid #ccc;
-            background-color: #9BB498;
+            background-color: #f1f1f1;
         }
 
         /* Style the buttons inside the tab */
         .tab button {
             background-color: inherit;
-            float: center;
+            float: left;
             border: none;
             outline: none;
             cursor: pointer;
@@ -28,12 +28,12 @@
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: #CEAE7C;
+            background-color: #ddd;
         }
 
         /* Create an active/current tablink class */
         .tab button.active {
-            background-color: #CEAE7C;
+            background-color: #ccc;
         }
 
         /* Style the tab content */
@@ -48,13 +48,11 @@
         <title>My personal site <3</title>
     </head>
     <body bgcolor="#F9E7CA" ; text="#0B6600" ;>
-        <h1><center>Bhargavi Gundla</center></h1>
+        <h1>Bhargavi Gundla</h1>
   
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
           <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
-          <button class="tablinks" onclick="openCity(event, 'Game Projects')">Game Projects</button>
-          <button class="tablinks" onclick="openCity(event, 'Design Projects')">Design Projects</button>
           <button class="tablinks" onclick="openCity(event, 'Clothing')">Clothing</button>
           <button class="tablinks" onclick="openCity(event, 'Embroidery')">Embroidery</button>
           <button class="tablinks" onclick="openCity(event, 'Photography')">Photography</button>
@@ -73,16 +71,6 @@
           <h3>My resume here.</h3>
           <p></p> 
         </div>
-
-        <div id="Game Design" class="tabcontent">
-          <h3>My games here.</h3>
-          <p></p> 
-        </div>
-
-        <div id="Design Projects" class="tabcontent">
-          <h3>My design projects here.</h3>
-          <p></p> 
-        </div>
         
         <div id="Clothing" class="tabcontent">
           <h3>Clothing I've made.</h3>
@@ -98,7 +86,7 @@
         </div>
         
         <script>
-        function openButton(evt, buttonName) {
+        function openCity(evt, cityName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
