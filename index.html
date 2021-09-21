@@ -1,43 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-<title>My personal site <3</title>
-</head>
-<body bgcolor="#F9E7CA"; text = "#0B6600";>
-    <h1>Bhargavi Gundla</h1>
-    <h2>Portfolio</h2>
-  Welcome to my creative portfolio!
-  <br> I am a Computational-Media major at Georgia Institute of Technology, specializing in Media and Interactive Design. This site has been created to present a culmination of my personal and professional interests.
-  <br><br> This forces a line break.
-  <br> This tag doesn't need to be closed.
-  
-  <p> Starts a paragraph. Close like so: </p>
-  
-  <p> Then repeat to start the next paragraph, and pay attention to the line spacing that results from this technique. </p>
-  
-  <p> Are you getting the hang of this? It is quite a challenge to position text accurately with these basic techniques - not like word processing at all. Later on you can learn how to draw TABLES - a grid which enables the precise setting of web page elements - but, for now, see how much you can do with a few simple tricks. </p>
-  
-  <center>puts text in the centre of a page. Close</center> 
-  <pre>
-  
-      This enables you to have some control
-      over the positioning of text.
-      BUT
-      the font, as you see, is mono-type.
-  
-      Remember 
-      to
-                      close
-                             the
-                tag.
-  </pre>
-   
-  
-  Don't forget - there is no space between the brackets and the text inside.
-  
-  and just for fun: < HR > draws a horizonal line across the page. No need to close this tag.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-</body>
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+    <head>
+        <title>My personal site <3</title>
+    </head>
+    <body bgcolor="#F9E7CA" ; text="#0B6600" ;>
+        <h1>Bhargavi Gundla</h1>
+        <h2>Portfolio</h2>
+        Welcome to my creative portfolio!
+        <br>
+        I am a Computational-Media major at Georgia Institute of Technology, specializing in Media and Interactive Design. This site has been created to present a culmination of my personal and professional interests.
+        <br><br>
+        <a href="mailto:bhargavigundla@yahoo.com">email me</a>
+
+        <h2>Tabs</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
+        
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+        
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+        
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+           
+    </body>
 </html>
