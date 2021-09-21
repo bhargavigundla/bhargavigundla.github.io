@@ -6,14 +6,11 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         /* Style the tab */
         .tab {
             overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
+            background-color: #AFCC7D;
         }
-
         /* Style the buttons inside the tab */
         .tab button {
             background-color: inherit;
@@ -24,23 +21,20 @@
             padding: 14px 16px;
             transition: 0.3s;
             font-size: 17px;
+            font: Helvetica;
         }
-
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: rgb(190, 154, 113);
         }
-
         /* Create an active/current tablink class */
         .tab button.active {
-            background-color: #ccc;
+            background-color: rgb(190, 154, 113);
         }
-
         /* Style the tab content */
         .tabcontent {
             display: none;
             padding: 6px 12px;
-            border: 1px solid #ccc;
             border-top: none;
         }
     </style>
@@ -49,29 +43,45 @@
     </head>
     <body bgcolor="#F9E7CA" ; text="#0B6600" ;>
         <h1>Bhargavi Gundla</h1>
-  
+
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
           <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
+          <button class="tablinks" onclick="openCity(event, 'Game Projects')">Game Projects</button>
+          <button class="tablinks" onclick="openCity(event, 'Design Projects')">Design Projects</button>
           <button class="tablinks" onclick="openCity(event, 'Clothing')">Clothing</button>
           <button class="tablinks" onclick="openCity(event, 'Embroidery')">Embroidery</button>
           <button class="tablinks" onclick="openCity(event, 'Photography')">Photography</button>
         </div>
-        
+
         <div id="About Me" class="tabcontent">
-          <h3>About Me</h3>
-          <p>Welcome to my creative portfolio!
-            <br><br>
-            I am a Computational-Media major at Georgia Institute of Technology, specializing in Media and Interactive Design. This site has been created to present a culmination of my personal and professional interests.
+          <p> <h3>Welcome to my creative portfolio!</h3>
+            
+            I am a Computational-Media major at Georgia Institute of Technology, specializing in Media and Interactive Design. 
+            <br>This site has been created to present a culmination of my personal and professional interests.
             <br>
+            <br>
+            email me: <a href="mailto:bhargavigundla@yahoo.com">bhargavigundla@yahoo.com</a>
+            <br>school email: <a href="mailto:bgundla3@gatech.edu">bgundla3@gatech.edu</a>
+            <br>phone number: 678-896-2086
           </p>
         </div>
-        
+
         <div id="Resume" class="tabcontent">
           <h3>My resume here.</h3>
           <p></p> 
         </div>
-        
+
+        <div id="Game Projects" class="tabcontent">
+          <h3>My games here.</h3>
+          <p></p> 
+        </div>
+
+        <div id="Design Projects" class="tabcontent">
+          <h3>My designs here.</h3>
+          <p></p> 
+        </div>
+
         <div id="Clothing" class="tabcontent">
           <h3>Clothing I've made.</h3>
           <p></p>
@@ -83,8 +93,9 @@
 
         <div id="Photography" class="tabcontent">
           <h3>Some of my favorite photos.</h3>
+          <img src="bark_collage.png" alt="Pictures of mossy bark" width="1200" height="600">
         </div>
-        
+
         <script>
         function openCity(evt, cityName) {
           var i, tabcontent, tablinks;
@@ -101,5 +112,6 @@
         }
         </script>
            
+        <img src="waves for bottom of page.png" style="max-width: fit-content;" alt="Ghibli film screencap- Ponyo, ocean waves"> 
     </body>
 </html>
