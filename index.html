@@ -1,233 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /* Style the tab */
-        .tab {
-            overflow: hidden;
-            background-color: #AFCC7D;
-        }
-        /* Style the buttons inside the tab */
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-            font: Helvetica;
-        }
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: rgb(190, 154, 113);
-        }
-        /* Create an active/current tablink class */
-        .tab button.active {
-            background-color: rgb(190, 154, 113);
-        }
-        /* Style the tab content */
-        .tabcontent {
-            display: none;
-            border-top: none;
-        }
-    </style>
-    <head>
-        <title>Bhargavi Gundla's Portfolio</title>
-    </head>
-    <body bgcolor= "d9dfbd" text="#0B6600" >
-        <center><img src="pictures/Ponyo's house cropped.png" alt="Absrtract image of Ponyo's house, cropped to be narrow" width="100%"></center>
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
-          <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
-          <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-          <button class="tablinks" onclick="openCity(event, 'Work Experience')">Work Experience</button>
-          <button class="tablinks" onclick="openCity(event, 'Awards')">Awards</button>
-          <button class="tablinks" onclick="openCity(event, 'Hobbies')">Hobbies</button>
-        </div>
+<head>
+	<title>Dimension by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-        <div id="About Me" class="tabcontent">
-          <p> <h3>Welcome to my creative portfolio!</h3>
+<body class="is-preload">
 
-            <img src="pictures/BhargaviGundla.png" alt="Profile Picture" width="25%" align="left" id="hp">
-            <p>
-                Hello! My name is Bhargavi (Bar-guh-vee) Gundla (Gund-la). I am a third year student
-                at the Georgia Institute of Technology, studying Media and Interactive Design. This site has been
-                created to present a culmination of my personal and professional interests.
-            </p>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-            <p>
-                I am a recent transfer student from the University of Georgia, and this fall 2021 is my second semester
-                at Tech. Previously, I was a Computer Science major with a minor in Studio Art, giving me a background
-                in coding and various physical art media prior to transferring.
-            </p>
+		<!-- Header -->
+		<header id="header">
+			<div class="content">
+				<div class="inner">
+					<h1>Bhargavi Gundla</h1>
+					<p>My Portfolio</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
 
-            <p>
-                Outside of school, I spend my time working on my various artistic interests. Presently, I have
-                been focusing on embroidery, photography and making clothing sustainably with secondhand materials. This
-                website is a work in progress as I upload these creative projects, but in the meantime, please feel free
-                to explore my resume and uploaded creative work!
-            </p>
+		<!-- Main -->
+		<div id="main">
 
-            Email me: <a href="mailto:bhargavigundla@yahoo.com">bhargavigundla@yahoo.com</a>
-            <br>School Email: <a href="mailto:bgundla3@gatech.edu">bgundla3@gatech.edu</a>
-            <br>Github: ydder7850
-            <br>Phone Number: 678-896-2086
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">About Me</h2>
+				<span class="image main"><img src="images/ProfileLong.png" alt="" /></span>
+				<p>
+					Hello! My name is Bhargavi Gundla.
+					I am a fourth year student at the Georgia Institute of Technology,
+					studying Media and Interactive Design.
+					This site has been created to present a culmination of my personal
+					and <a href="#work"> professional</a> interests.
+				</p>
 
-        </div>
+				<p> Outside of school,
+					I spend my time working on my various artistic interests.
+					Presently, I have been focusing on embroidery, photography
+					and making clothing sustainably with secondhand materials.
+					This website is a work in progress as I upload these creative
+					projects, but in the meantime, please feel free to explore my
+					resume and uploaded creative work!
+				</p>
+				<a href="/resume/BhargaviGundlaResume.pdf">Link to a pdf</a>
 
-        <div id="Education" class="tabcontent">
-            <h2>Universities</h2>
-          <h4>
-              Georgia Institute of Technology Class of 2023, B.S Computational Media
-          </h4>
-                I am currently pursuing a degree in Computational Media, specializing in the Media and Interactive
-                Design threads.
-          <h4>
-              University of Georgia (2019-2021), Honors College; B.S Computer Science; 3.82 GPA
-          </h4>
-                Pursued a degree in Computer Science, and a Minor in Studio Art during my time at UGA.
+			</article>
 
-            <br><br>
-            <h2>CODING SKILLS</h2>
-            - Java via git
-            <br>- Unix
-            <br>- EMACS
-            <br>- Eclipse
-            <br>- IntelliJ
-            <br>- Python
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Work</h2>
+				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+				<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
+					Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer
+					sollicitudin mauris nec lorem luctus ultrices.</p>
+			</article>
 
-            <br><br>
-            <h2>ADOBE SKILLS</h2>
-            - Photoshop
-            <br>- Illustrator
-            <br>- InDesign
-            <br>- Premiere Pro
-            <br><br>
-            <h2>RELEVANT COURSEWORK</h2>
-            - Programming & Software Development
-            <br>- Theory of Computing
-            <br>- Discrete Mathematics
-            <br>- Introduction to Cognitive Science
-            <br>- Data Structures
-            <br>- Calculus II
-            <br>- Linear Algebra
-            <br>- Game Studies
-            <br>- Introduction to Visual Design
-        </div>
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</article>
 
-        <div id="Projects" class="tabcontent">
-            <h2>MINESWEEPER APPLICATION in JAVA 11(Fall 2020)</h2>
-            - Developed a console based-minesweeper application
-            <br>- Utilized seed files to set the size of the game board, number/location of mine
-            <br>- Set intuitive controls with easy-to-understand menu and help functions
-            <br><br>
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
 
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
 
-            <h2>GUI REVERSI APPLICATION in JAVA 11, JAVAFX 11 (Fall 2020)</h2>
-            - Utilized Java 11 and JavaFX 11 to implement the Reversi game
-            <br>- Developed a playable, interactive, game with intuitive mouse controls
-            <br><br>
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
 
-            <h2>3-D GRAPHIC SCENE via AFRAME (Fall 2021)</h2>
-            - created a 3-dimensional representation of an abstracted art piece painted by using Aframe's built in shape objects
-            <br>- the original piece is a color study entitled, "Squares with Concentric Circles" painted by Wassily Kandinsky in 1913
-            <h2></h2>
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
 
-            <h2></h2>
+				<section>
+					<h3 class="major">Lists</h3>
 
-            <h2></h2>
-            <br>
-            <h2></h2>
-            <br>
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-        </div>
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-        <div id="Work Experience" class="tabcontent">
-            <h2>LAMBERT HIGH SCHOOL SCIENCE DEPARTMENT (August 2017 – May 2019)</h2>
-            <h4>Biology Teaching Assistant, Suwanee Georgia</h4>
-            - Supervised lab set up for 5 class periods and assisted students with daily assignments
-            <br>- Graded classwork, homework, and labs for 150+ students, and provided feedback
-            <br><br>
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
 
-            <h2>MATERIALS ANALYTICAL SERVICES (August 2018 – May 2019)</h2>
-            <h4>Intern in Analytical Chemistry Department, Suwanee Georgia</h4>
-            - Performed sample analysis on 20+ samples per week to ensure consumer products abide by
-            Consumer Product Safety Commission (CPSC) regulations
-            <br>- Archived 100+ samples per week for legal proceedings involving asbestos and other
-            particulates in products
-            <br>- Referenced the Laboratory Information Maintenance System (LIMS) to organize stored samples
-            <br>- Learned Standard Operating Procedures (SOPs) to ensure sample testing accuracy
-            <br><br>
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
 
-            <h2>RESPITE CARE WORKER (August 2018 – May 2019)</h2>
-            <h4>Independent Worker, Suwanee Georgia</h4>
-            - Assisted a local autistic student with reading, typing and communication
-            <br>- Provided transportation to and from patient’s school and home
-            <br>- Utilize the Rapid Prompting Method (RPM) in conjunction with iPad exercises to teach literacy
-            <br>- Assist with exercise therapies and Brain Balance Exercises
-            <br><br>
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
 
-            <h2>EYE LEVEL LEARNING CENTER (July 2016 – Present)</h2>
-            <h4>Teaching Assistant, Suwanee Georgia</h4>
-            - Provide private instruction in Math and Reading to elementary age students (ages 4-10)
-            <br>- Administer, proctor, and score academic or diagnostic assessments
-            <br>- Maintain records of student progress and performance, maintaining confidentiality
-          <p></p> 
-        </div>
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
 
-        <div id="Awards" class="tabcontent">
-          <h3>Zell Miller Academic Scholarship (2019)</h3>
-            <h3>Hospice Certification via Twilight Brigade (2018)</h3>
-            <h3>HOSA Barbara James Award for 100+ service hours (2019)</h3>
-            <h3>1st Place HOSA SLC for Medical Innovation (2018)</h3>
-          <p></p>
-        </div>
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
 
-        <div id="Hobbies" class="tabcontent">
-          <h3>Embroidery I've made.</h3>
-          
-          <center><img src="pictures/shell embroidery.png" alt="Pictures of embroidery with a shell and mirror background" width="100%"></center>
-          <center><h5>Summer 2020, abstract embroidery using shells collected in Charleston</h5></center>
-          <br>
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
 
-          <center><img src="pictures/finished embroidery.png" alt="Finished version of embroidery" width="100%"></center>
-          <center><h5>Summer 2020, finished version of abstract embroidery using shells collected in Charleston, with a forest backdrop</h5></center>
-          <br>
-          
-          <center><img src="pictures/Up House Embroidery.png" alt="Pictures of an en embroidery piece of the balloon house from the movie Up" width="100%"></center>
-          <center><h5>Fall 2019, embroidery on handpainted canvas fabric of the Up House</h5></center>
+			</article>
 
-          <h3>Some of my favorite photos.</h3>
-          <center><img src="pictures/garden pictures.png" alt="four pictures of a garden" width=100%></center>
-          <center><h5>Spring 2021, Gibbs Garden</h5></center>
-          <br>
-          <center><img src="pictures/bark_collage.png" alt="Pictures of mossy bark" width="100%"></center>
-          <center><h5>Close ups of various mossy tree bark</h5></center>
-        </div>
+		</div>
 
-        <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        </script>
-           
-        <img src="pictures/waves for bottom of page.png" style="width: 100%;" alt="Ghibli film screencap- Ponyo, ocean waves"> 
-    </body>
+		<!-- Footer -->
+		<footer id="footer"></footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
